@@ -6,23 +6,19 @@
     <title>Dom Demo</title>
 </head>
 <body>
-    <div>
+    <div id="first-div">
         <h1>Programing Languages</h1>
         <p>Thes are some of the programing Languages:</p>
-        <ul class="languages">
-          <li >JavaScript</li>  
-          <p>We can create interactive websites using JavaScript</p>
-          <li >Kotlin</li> 
-          <p>We can develop Android apps using Kotlin</p>
-          <li >Swift</li> 
-          <p>We can develop ios apps using Swift</p>
+        <ul >
+          <li id="first-li">JavaScript</li>  
+          <li id="second-li">Kotlin</li> 
+          <li id="last-li">Swift</li> 
         </ul>
     </div>
 
   <script>
-    let text = document.querySelectorAll('.languages p')
-    console.log(text)
-
+   let android = document.querySelector("#second-li")
+   android.innerText = "Java"
   </script>  
     
 </body>
