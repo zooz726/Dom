@@ -6,20 +6,15 @@
     <title>Dom Demo</title>
 </head>
 <body>
-    <div >
-        <h1>Programing Languages</h1>
-        <ul class="list" >
-          <li >JavaScript</li>  
-          <li >Kotlin</li> 
-          <li >Swift</li> 
-        </ul>
-    </div>
+    <h3>Clicks: <span id="clicks">0</span></h3>
+    <button type="button" onClick="add()">+</button>
 
   <script>
-    let languagesList = document.querySelector(".list")
-    let ios = document.querySelectorAll("li")[2]
-    ios.remove()
-    console.log(languagesList)
+    let clicks = 0;
+    function add() {
+        clicks++;
+        document.getElementById("clicks").innerText = clicks
+    }
 
 
   </script>
