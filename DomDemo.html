@@ -8,7 +8,6 @@
 <body>
     <div >
         <h1>Programing Languages</h1>
-        <p>Thes are some of the programing Languages:</p>
         <ul class="list" >
           <li >JavaScript</li>  
           <li >Kotlin</li> 
@@ -17,12 +16,15 @@
     </div>
 
   <script>
-   let langageList = document.querySelector(".list")
-   let ruby = document.createElement("li")
-   ruby.innerText = "Ruby"
-   langageList.append(ruby)
-   console.log(langageList)
-  </script>  
+    let languagesList = document.querySelector(".list")
+    let ios = document.querySelectorAll("li")[2]
+    ios.remove()
+    console.log(languagesList)
+
+
+  </script>
+   
+   
     
 </body>
 </html>
